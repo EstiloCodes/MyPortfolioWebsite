@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nyan Lin Tun</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nyan Lin Tun</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/myprofile.jpg" alt="NLH's profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nyan Lin Tun</h1>
+        <p class="section__text__p2">Undergraduate Student</p>
+        <div class="buttons">
+          <a href="assets/Curriculum Vitae.pdf.png" download>
+            <button class="btn-btn-color-1">Download CV</button>
+          </a>
+          <button class="btn-btn-color-2" onclick="location.href='./#contact'">
+            Contact Me
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/estilo-nlh-2b12b0278/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/EstiloCodes'"
+          />
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="about">
+      <p class="section__text__p1">Get To Know More!</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about__pic-container">
+          <img src="assets/lelouch.jpg" alt="profile picture" srcset="" />
+        </div>
+        <div class="about__text">
+          <p>
+            Hi there! I'm Nyan Lin Tun, a 21-year-old undergraduate student from
+            Myanmar with a passion for Computer Science. My journey in the world
+            of coding began as a curiosity and has since evolved into a strong
+            desire to contribute to the digital landscape. I thrive on
+            challenges and love exploring new technologies.Join me on this
+            exciting journey of learning, innovation, and pushing the boundaries
+            of what's possible.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+
+    <section id="education">
+      <p class="section__text__p1">My Academic Journey</p>
+      <h1 class="title">Education</h1>
+      <p class="section__text__p2">
+        With a passion for learning and a track record of academic excellence, I
+        embarked on a remarkable journey through high school. My dedication and
+        hard work were rewarded with outstanding achievements, showcasing my
+        commitment to education. Now, as I set my sights on the future, I'm
+        excited to pursue my dream of a Computer Science degree. I'm eagerly
+        looking forward to the challenges and opportunities that lie ahead in
+        this dynamic field, where I intend to leverage my past successes as
+        stepping stones toward a bright and fulfilling educational experience.
+      </p>
+      <div class="education-container">
+        <div class="education-card">
+          <a href="assets/Grade-9.jpg" target="_blank">
+            <img src="assets/Grade-9.jpg" alt="Transcript 1" />
+          </a>
+          <p>Grade-9</p>
+          <a href="assets/Grade-9.jpg" target="_blank">
+            <button class="btn-btn-color-1">View</button>
+          </a>
+        </div>
+        <div class="education-card">
+          <a href="assets/Grade-10.jpg" target="_blank">
+            <img src="assets/Grade-10.jpg" alt="Transcript 2" />
+          </a>
+          <p>Grade-10</p>
+          <a href="assets/Grade-10.jpg" target="_blank">
+            <button class="btn-btn-color-1">View</button>
+          </a>
+        </div>
+        <div class="education-card">
+          <a href="assets/Grade-11.jpg" target="_blank">
+            <img src="assets/Grade-11.jpg" alt="Transcript 3" />
+          </a>
+          <p>Grade-11</p>
+          <a href="assets/Grade-11.jpg" target="_blank">
+            <button class="btn-btn-color-1">View</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+    <section id="contact">
+      <p class="section__text__p1">Let's Connect</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="section-container">
+        <p class="section__text__p2">Feel free to reach out to me:</p>
+        <div class="contact-links">
+          <a href="mailto:nyanlinnhtun2002@gmail.com" class="contact-link">
+            <img src="assets/email.png" alt="Email Icon" class="contact-icon" />
+            Email
+          </a>
+          <a href="https://www.instagram.com/estilo.nlh/" class="contact-link">
+            <img
+              src="assets/instagram.jpg"
+              alt="Instagram Icon"
+              class="contact-icon"
+            />
+            Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+      <p class="skill-level">Still learning and improving</p>
+      <div class="section-container">
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-icon">
+              <p class="skill-name">
+                C
+                <img
+                  src="assets/checkmark.png"
+                  alt="Checkmark"
+                  class="checkmark"
+                />
+              </p>
+              <p class="skill-level">Beginner</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">
+              <p class="skill-name">
+                React JS
+                <img
+                  src="assets/checkmark.png"
+                  alt="Checkmark"
+                  class="checkmark"
+                />
+              </p>
+              <p class="skill-level">Beginner</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">
+              <p class="skill-name">
+                JavaScript
+                <img
+                  src="assets/checkmark.png"
+                  alt="Checkmark"
+                  class="checkmark"
+                />
+              </p>
+              <p class="skill-level">Above Intermediate</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">
+              <p class="skill-name">
+                Python
+                <img
+                  src="assets/checkmark.png"
+                  alt="Checkmark"
+                  class="checkmark"
+                />
+              </p>
+              <p class="skill-level">Intermediate</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">
+              <p class="skill-name">
+                C++
+                <img
+                  src="assets/checkmark.png"
+                  alt="Checkmark"
+                  class="checkmark"
+                />
+              </p>
+              <p class="skill-level">Beginner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <p></p>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-details">
+            <h2 class="project-title">JavaScript Calculator</h2>
+            <p class="project-description">
+              A simple calculator built using HTML, CSS, and JavaScript to
+              perform basic arithmetic operations.
+            </p>
+            <a
+              href="https://estilocodes.github.io/Calculator/"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-details">
+            <h2 class="project-title">Tic Tac Toe Game</h2>
+            <p class="project-description">
+              Play the classic Tic Tac Toe game against your friend, built with
+              HTML, CSS, and JavaScript.
+            </p>
+            <a
+              href="https://estilocodes.github.io/Tic-Tac-Toe/"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-details">
+            <h2 class="project-title">Stopwatch App</h2>
+            <p class="project-description">
+              A stopwatch app with start, stop, and reset functionality, created
+              using HTML, CSS, and JavaScript.
+            </p>
+            <a
+              href="https://estilocodes.github.io/StopWatch/"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">Nyan Lin Tun</div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <a href="#projects">Projects</a>
+        </div>
+      </div>
+      <p class="footer-copyright">© 2023 Nyan Lin Tun. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
