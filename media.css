@@ -1,17 +1,47 @@
-@media screen and (max-width: 1400px) {
+/* to send the greeting text under the profile*/
+
+@media screen and (max-width: 1000px) {
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    height: auto; 
+  }
+  .section__pic-container {
+    margin-top: 20px; 
+  }
+
+  .section__text {
+    margin: 0; 
   }
   .about-containers {
     flex-wrap: wrap;
   }
 }
+  
 
-@media screen and (max-width: 1000px) {
+ /* for mobile hamburger change*/
+@media screen and (max-width: 850px) {
   #desktop-nav {
     display: none;
   }
   #hamburger-nav {
     display: flex;
-  }}
+  }
+  #profile {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    height: auto; 
+  }
+
+  .section__pic-container {
+    margin-top: 20px; 
+  }
+
+  .section__text {
+    margin: 0; 
+  }
+
+
+}

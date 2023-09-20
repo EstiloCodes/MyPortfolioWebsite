@@ -44,26 +44,39 @@ body{
     text-decoration: none;
     text-decoration-color:rgb(255, 255, 255) ;
     user-select: none;
+    transition: all 300ms ease;
+   
   
   }
+  
   a:hover{
-    color: rgb(206, 47, 234);;
+    color: rgb(225, 15, 249);;
     text-decoration: underline;
     text-decoration-color: rgb(0, 0, 0);
     text-underline-offset: 0.7rem;
-
+    
+    transform: translateY(-5px);
+    transition: all 0.2s ease;
+    
   }
+ 
+
+             
   .logo{
     font-size: 2rem;
 user-select: none;
 color: rgb(3, 3, 3);
 font-family: 'Lobster Two', cursive;
 font-size: 3rem;
+transition: transform 0.4s ease;
+
 
   }
   .logo:hover{
     cursor: default;
     color: rgb(219, 67, 98);
+    transform: translateY(-5px);
+   
     
   }
   /* hamburger */
@@ -163,8 +176,8 @@ font-size: 3rem;
  
 
   object-fit: cover;
-  width: 400px; /* Adjust the size as needed */
-    height: 400px; /* Adjust the size as needed */
+  width: 400px; 
+    height: 400px; 
   overflow: hidden;
 
 border-radius: 50%;
@@ -207,6 +220,13 @@ border-radius: 50%;
 .icon {
   cursor: pointer;
   height: 2rem;
+  
+}
+.icon:hover{
+  cursor: pointer;
+  height: 2rem;
+  transition: transform 0.3s ease;
+  transform: translateY(5px);
 }
 /* buttons */
 
@@ -235,6 +255,8 @@ cursor: pointer;
 }
 .btn-btn-color-2:hover{
   background-color: #0fcbed;
+  transition: transform 0.3s ease;
+  transform: translateY(-5px);
 }
 .btn-btn-color-1:hover{
   background-color: #f68000;
@@ -253,8 +275,8 @@ justify-content: center;
 
 
   object-fit: cover;
-  width: 200px; /* Adjust the size as needed */
-    height: 250px; /* Adjust the size as needed */
+  width: 200px;
+    height: 250px; 
   
 
 border-radius: 50%;
@@ -262,7 +284,7 @@ border-radius: 50%;
 }
 
 
-/* Style About Me section */
+/*  About Me section */
 #about {
   
   padding: 40px 0;
@@ -299,51 +321,105 @@ border-radius: 50%;
 }
 
 
-
-/* Style Education section */
-#education {
-  
-  padding: 40px 0;
+.section-title {
   text-align: center;
-}
-
-#education .title {
+  font-size: 30px;
+  margin-top: 0; 
   margin-bottom: 20px;
 }
 
-.education-container {
+#education {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px;
+  gap: 20px;
 }
 
-.education-card {
-  width: 280px;
-  margin: 20px;
-  padding: 10px;
-  
+.education,
+.experience {
+  flex: 0 0 calc(50% - 10px); 
+  border: 1px solid #ccc;
+  float: left;
   border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(114, 111, 115, 0.985);
+  box-shadow: 0 2px 4px rgba(93, 13, 13, 0.985);
+  padding: 20px;
+  margin-bottom: 20px; 
+}
+
+.education-details,
+.experience-details {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+i.fas {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #111011;
+}
+
+
+.education-title,
+.experience-title {
+  font-weight: bold;
+  color: #111011;
+}
+
+.education-pass{
+  color: #000000;
+}
+
+ 
+
+ #awards-certificates {
   text-align: center;
 }
 
-.education-card img {
-  max-width: 100%;
-  border-radius: 4px;
+.section-subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.education-card p {
-  margin-top: 10px;
+#awards-certificates {
+  text-align: center;
 }
-#education .section__text__p2 {
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: 800px;
+
+.section-subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.awards-container {
+  text-align: left;
   margin: 0 auto;
-  padding: 0 20px;
+  max-width: 400px;
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0px 2px 4px rgba(93, 13, 13, 0.985); 
 }
+
+.award-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin: 10px 0;
+}
+
+.award-item i {
+  font-size: 24px;
+  color: #FFD700; 
+  margin-right: 10px;
+}
+
+
+
+
+
 
 
 /* Style Contact section */
@@ -381,7 +457,7 @@ border-radius: 50%;
 }
 
 .contact-link:hover {
-  color: #ff9900;
+  color: #DD2A7B;
 }
 
 .contact-icon {
@@ -467,6 +543,13 @@ footer {
   font-size: 1.5rem;
   font-weight: bold;
   color: #111011;
+  font-family: 'Lobster Two', cursive;
+  transition: transform 0.4s ease;
+  margin-bottom: 10px;
+}
+.footer-logo:hover{
+  color: rgb(219, 67, 98);
+  transform: translateY(-5px);
 }
 
 .footer-links a {
@@ -477,10 +560,11 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #ff9800; /* Change to your desired hover color */
+  color: #ed0fa3; 
   text-underline-offset: 0.7rem;
   text-decoration: underline;
-  text-decoration-color:rgb(151, 98, 160) ;
+  text-decoration-color:rgb(7, 7, 7) ;
+  
 }
 
 .footer-copyright {
