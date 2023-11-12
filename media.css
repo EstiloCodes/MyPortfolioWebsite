@@ -41,6 +41,10 @@
 
   .section__text {
     margin: 0; 
+
+  }
+  .about__text {
+    text-align: center; /* Center text in the mobile view */
   }
 
 
